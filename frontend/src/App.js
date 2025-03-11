@@ -1,7 +1,12 @@
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "./redux/authSlice";
 import { useNavigate } from "react-router-dom";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   const { user } = useSelector((state) => state.auth);
